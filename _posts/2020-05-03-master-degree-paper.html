@@ -1,0 +1,29 @@
+<!-- -&#45;&#45;-->
+<!--layout: post-->
+<!--categories: jekyll update-->
+<!-- -&#45;&#45;-->
+
+---
+layout: null
+title:  "Structural Image De-identification For Privacy-Preserving Deep Learning"
+date:   2020-05-03 11:23:00 +0900
+---
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts.mdp %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+      </h2>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
